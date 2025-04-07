@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1f1d1de2;
+    color: white;
+    font-family: 'roboto', serif;
+}
+
+header {
+    padding: 25px;
+    margin-bottom: 160px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+  color: white;
+}
+
+i {
+  color: cyan;
+}
+
+span {
+    color: cyan;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+  all: unset;
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 5px;
+}
+
+nav ul li a:link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:  white;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    border-bottom: 3px solid darkturquoise;
+    color: darkturquoise;
+    padding-bottom: 5px;
+    transition: 0.7s;
+}
+
+nav ul li a:active {
+    color: darkturquoise;
+}
+
+nav ul li a:visited {
+    color: gray;
+}
+
+
+.active {
+    color: darkturquoise;
+}
+
+header .section-home {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.section-home .first-home {
+    display: block;
+    flex-direction: column;
+    padding-right: 300px;
+} 
+
+.first-home  h1, h2, p, .btn-cv {
+    margin-top: 20px;
+}
+
+.first-home p {
+    white-space: normal;
+    word-wrap: break-word;
+  color: rgb(192, 190, 190);
+  line-height: 29px;
+}
+
+.first-home a {
+  color: black;
+}
+
+.first-home a:visited {
+  color: gray;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 15px 25px;
+
+    color: black;
+    background-color: cyan;
+    border-radius: 30px 50px;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px white;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.section-home .second-home  {
+    display: block;
+}
+
+
+.section-home .card-home {
+    display: block;
+    border: 2px solid cyan;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px cyan;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-home img {
+   width: 60%;
+}
+
+.card-home img:hover {
+  transform: scale(1.1);
+}
+
+  
+
+  #About {
+   display: block;
+   justify-items: center; 
+    margin: 160px 0;
+    padding: 25px 150px;
+  }
+
+  #About .about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+  }
+
+  #About .about-pic {
+    display: block;
+  }
+
+  #About .about-pic .card-about {
+    display: block;
+    border: none;
+    background-color: #fff8f80e;
+    border-radius: 30px 120px;
+    box-shadow: 4px 4px 4px cyan;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-about img {
+   width: 60%;
+}
+
+.card-about img:hover {
+  transform: scale(1.1);
+}
+
+  #About .about-text {
+    display: block;
+    flex-direction: column;
+    
+  }
+
+  #About .about-text h1 {
+    font-size: 2.2rem;
+  }
+
+  #About .about-text p {
+    white-space: normal;
+    word-wrap: break-word;
+     color: rgb(224, 216, 216);
+     line-height: 29px;
+  }
+
+  #Work {
+    display: block;
+    margin: 160px 0;
+    padding: 25px;
+    justify-items: center;
+  }
+
+  #Work .work-content {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .work-content .box {
+    width: 400px;
+    display: block;
+    justify-items: center;
+    text-align: center;
+    background-color: #fff8f80e;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 30px 20px;
+    margin-top: 45px
+  }
+
+  .box:hover {
+    border: 1px solid cyan;
+    box-shadow: 4px 4px 2px cyan;
+  }
+
+#Work h1 {
+    font-size: 2.2rem;
+  }
+
+  .work-content .box .card-work {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    color: cyan;
+  }
+
+  .card-work img {
+    width: 100%;
+  }
+
+#Resume {
+  display: block;
+  margin: 160px 0;
+  padding: 25px;
+  justify-items: center;
+}
+
+#Resume .resume-content {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-content .box {
+  width: 350px;
+  display: block;
+  justify-items: center;
+  text-align: center;
+  background-color: #fff8f80e;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 50px 20px;
+  margin-top: 45px;
+
+  border: 1px solid cyan;
+  box-shadow: 4px 4px 2px cyan;
+}
+
+.resume-content .box:hover {
+  background-color: transparent;
+}
+
+#Resume h1 {
+  font-size: 2.2rem;
+}
+
+.resume-content .box .card-resume {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  color: cyan;
+}
+
+.card-resume img {
+  width: 100%;
+}
+
+.card-resume img:hover {
+  transform: scale(1.1);
+}
+
+#Contact {
+  display: block;
+  
+   margin: 160px 0;
+   padding: 25px 150px;
+ }
+
+ #Contact .contact-content {
+  display: flex;
+  padding: 5px 25px;
+  gap: 150px;
+  justify-content: center;
+}
+
+.contact-content .contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.contact-links h1 {
+  font-size: 2.2rem;
+}
+
+.contact-links .btn a {
+  color: black;
+}
+
+.contact-links.btn a:visited {
+  color: gray;
+}
+
+.contact-links .my-links, .phone, .social-media {
+  display: flex;
+  gap: 20px;
+}
+
+.social-media i {
+  color: rgb(206, 202, 202);
+  font-size: 1.2rem;
+}
+
+.social-media i:hover {
+  color: cyan;
+}
+
+.contact-content .contact-form, form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+
+.contact-form form input {
+  padding: 15px;
+  width: 630px;
+  background-color: #fff8f80e;
+  color: rgb(225, 225, 225);
+  border: none;
+  border-radius: 10px;
+  outline-color: cyan;
+}
+
+
+.contact-form form textarea {
+  resize: none;
+  padding: 15px;
+  background-color: #fff8f80e;
+  color: rgb(225, 225, 225);
+  border: none;
+  border-radius: 10px;
+  outline-color: cyan;
+}
+
+.contact-form form .btn {
+  margin-top: 5px;
+}
+
+footer {
+  background-color: #fff8f80e;
+}
+
+footer .about-portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  justify-items: center;
+  padding: 25px;
+}
+
+.about-portfolio .portfolio-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 200px;
+}
+
+.portfolio-content .compagnies, .ressources, ul {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-portfolio .autor {
+  justify-items: center;
+  padding: 10px;
+}
+
+footer a {
+  font-weight: bold;
+}
